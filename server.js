@@ -24,6 +24,7 @@ app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));
 app.use('/api/posts', require('./routes/api/posts'));
 
+// Error Handling
 function notFound(req, res, next) {
   res.status(404);
   const error = new Error('Not Found - ' + req.originalUrl);
@@ -41,6 +42,7 @@ function errorHandler(err, req, res, next) {
 app.use(notFound);
 app.use(errorHandler);
 
+// Connect to Port
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Server listening on: http://localhost:${port}`);
