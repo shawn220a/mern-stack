@@ -1,11 +1,13 @@
 const express = require('express');
 const morgan = require('morgan');
-// const cors = require('cors');
+const connectDB = require('./config/connection');
 
 const app = express();
 
+// Connect Database
+connectDB();
+
 app.use(morgan('dev'));
-// app.use(cors());
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
