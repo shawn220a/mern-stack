@@ -7,6 +7,8 @@ const config = require('config');
 const { check, validationResult } = require('express-validator');
 const User = require('../../models/User');
 
+// Routes prepended by api/users
+
 router.get('/', (req, res) => res.send('User route'));
 
 router.post(
