@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Full Stack App Course from Brad",
   "main": "server.js",
-  "repository": "https://github.com/shawn220a/mern-stack.git",
+  "repository": "https://gitlab.com/shawn220a/mern-stack.git",
   "author": "Shawn Tschoepe <shawn.42496@gmail.com>",
   "license": "MIT",
   "scripts": {
